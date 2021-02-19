@@ -54,6 +54,25 @@ img{
     margin: 10px auto;
 }
 
+.subtitulo-interno{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo-interno:after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
+}
+
 /* Header */
 
 .header{
@@ -90,6 +109,9 @@ img{
     color: #fff;
 }
 
+.header_menu a.menu_ativo{
+    color: #fff;
+}
 
 /* Introdução */
 
@@ -137,6 +159,32 @@ img{
     letter-spacing: .1em;
 }
 
+/* INTRODUÇÃO INTERNA */
+
+.introducao-interna{
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: #fff;
+    padding-top: 35px;
+}
+
+.introducao-interna h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto;
+}
+
 /* PRODUTOS */
 
 .produtos{
@@ -173,6 +221,10 @@ img{
 .produtos_icone{
     background: #000;
     padding: 20px;
+}
+
+.produtos_icone img{
+    margin: 0 auto;
 }
 
 .call{
@@ -233,6 +285,7 @@ img{
 
 .qualidade_lista{
     padding: 20px 0px;
+    overflow: auto; /*clear fix*/
 }
 
 .qualidade_lista li{
