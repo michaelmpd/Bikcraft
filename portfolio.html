@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script src="js/libs/modernizr.custom.45655.js"></script>
     <title>Bikcraft - Portfólio</title>
 </head>
 <body>
@@ -42,21 +43,49 @@
     </section>
     <!-- Fim Introdução -->
 
-    <section class="container">
-        <blockquote class="quote_cliente">
-            <p>"No mundoa atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte."</p>
-            <cite>Barbara Moss</cite>
-        </blockquote>
+    <section class="container animar-interno">
+        <ul class="rslides">
+            <li>
+                <blockquote class="quote_cliente">
+                    <p>"No mundoa atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte."</p>
+                    <cite>Barbara Moss</cite>
+                </blockquote>
+            </li>
+            <li>
+                <blockquote class="quote_cliente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptas.</p>
+                    <cite>Barbara</cite>
+                </blockquote>
+            </li>
+            <li>
+                <blockquote class="quote_cliente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur, porro dolorum suscipit accusantium provident corporis optio perspiciatis voluptates. Soluta.</p>
+                    <cite>Moss</cite>
+                </blockquote>
+            </li>
+        </ul>
     </section>
 
     <!-- INICIO PORTIFOLIO -->
 
-    <section class="portifolio">
+    <section class="portfolio">
         <div class="container">
-            <ul class="portifolio_lista">
-                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+            <ul class="portfolio_lista rsliders_portfolio">
+                <li>
+                    <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></div>
+                    <div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
+                    <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
+                </li>
+                <li>
+                    <div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
+                    <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></div>
+                    <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
+                </li>
+                <li>
+                    <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></div>
+                    <div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
+                    <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
+                </li>
             </ul>
         </div>
 
@@ -111,6 +140,21 @@
     </footer>
 
     <!-- FIM FOOTER -->
+
+
+        <!-- JAVASCRIPT -->
+
+        <script src="js/libs/jquery-3.5.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            $(function() {
+              $(".rslides").responsiveSlides();
+            });
+          </script>
+    
+        <!-- FIM JAVA SCRIPT -->
     
 </body>
 </html>

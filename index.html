@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script src="js/libs/modernizr.custom.45655.js"></script>
     <title>Bikcraft</title>
 </head>
 <body>
@@ -47,7 +48,7 @@
 
     <!-- Inicio Produtos -->
 
-    <section class="produtos container">
+    <section class="produtos container animar">
         <h2 class="subtitulo">Produtos</h2>
         <ul class="produtos_lista">
             <li class="grid-1-3">
@@ -83,14 +84,14 @@
 
         <!-- INICIO PORTIFOLIO -->
 
-        <section class="portifolio">
+        <section class="portfolio">
             <div class="container">
-                <h2 class="subtitulo">Portifólio</h2>
-                <ul class="portifolio_lista">
-                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-                </ul>
+                <h2 class="subtitulo">Portfólio</h2>
+                <div class="portfolio_lista">
+                    <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></div>
+                    <div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
+                    <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
+                </div>
             </div>
 
             <div class="call">
@@ -173,5 +174,23 @@
                 </div>
             </div>
         </footer>
+
+        <!-- FIM FOOTER -->
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/libs/jquery-3.5.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(function() {
+          $(".rslides").responsiveSlides();
+        });
+      </script>
+
+    <!-- FIM JAVA SCRIPT -->
 </body>
 </html>
